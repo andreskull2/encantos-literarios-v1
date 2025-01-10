@@ -31,18 +31,19 @@
     height: 100%;
     left: 0;
     top: 0;
-    border-radius: inherit;
+    border-radius: 25%;
     z-index: -1;
     -webkit-transform: scaleX(0); /* Prefixo para Safari */
     transform: scaleX(0);
-    -webkit-transition: -webkit-transform 250ms ease; /* Prefixo para Safari */
-    transition: -webkit-transform 250ms ease; /* Safari novamente */
-    transition: transform 250ms ease;
+    -webkit-transition: -webkit-transform 200ms ease-in-out; /* Prefixo para Safari */
+    transition: -webkit-transform 200ms ease-in-out; /* Safari novamente */
+    transition: transform 200ms ease-in-out;
 }
 
 #hero a:hover::before {
     -webkit-transform: scaleX(1); /* Prefixo para Safari */
     transform: scaleX(1);
+    border-radius: inherit;
 }
 
 #hero header {

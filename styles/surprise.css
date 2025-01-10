@@ -1,0 +1,148 @@
+#surprise {
+    max-width: var(--max-width);
+    margin-inline: auto;
+    padding-block: 4rem 2rem;
+  }
+  
+  #surprise div + div {
+    position: relative;
+    justify-content: center;
+  }
+  
+  #surprise div + div img {
+    height: 2.5rem;
+    width: 2.5rem; /* Fallback para browsers sem suporte a aspect-ratio */
+    aspect-ratio: 1;
+  }
+  
+  #surprise div + div img[src*="book"] {
+    transform: rotate(15deg);
+    margin-bottom: 0.25rem;
+    justify-self: end;
+    margin-right: 2.5rem;
+  }
+  
+  #surprise div + div img[src*="cristal"] {
+    transform: rotate(15deg);
+    justify-self: end;
+  }
+  
+  #surprise div + div h2 {
+    text-align: center;
+    font: 500 1rem/1.4 var(--font-family);
+    color: var(--text-body);
+  }
+  
+  #surprise div + div img[src*="planchette"] {
+    height: 2rem;
+    position: absolute;
+    transform: rotate(-30deg);
+    left: 1.5rem;
+    top: 70%;
+  }
+  
+  @media (min-width: 80em) {
+    #surprise {
+      padding-block: 7.5rem;
+    }
+  
+    #surprise div + div {
+      display: none;
+    }
+  
+    #surprise .desktop-only {
+      display: block;
+    }
+  
+    #surprise .desktop-only img[src*="book"] {
+      height: 5.5rem;
+      transform: rotate(21deg);
+      margin-inline: auto;
+      transform: scale(0);
+      transition: transform 200ms;
+    }
+  
+    #surprise .desktop-only h2 {
+      text-align: center;
+      font: 400 2rem/200% var(--font-family);
+      color: var(--text-body);
+    }
+  
+    #surprise .desktop-only h2 span {
+      opacity: 0.5;
+    }
+  
+    #surprise .desktop-only h2 span:nth-child(1) {
+      transition: opacity 200ms;
+    }
+  
+    #surprise .desktop-only h2 span:nth-child(2) {
+      transition: opacity 200ms;
+      transition-delay: 0.5s;
+    }
+  
+    #surprise .desktop-only h2 span:nth-child(3) {
+      transition: opacity 200ms;
+      transition-delay: 1s;
+    }
+  
+    #surprise .desktop-only h2 b {
+      color: var(--text-title);
+      font-weight: 500;
+    }
+  
+    #surprise .desktop-only img {
+      aspect-ratio: 1;
+    }
+  
+    #surprise .desktop-only div {
+      justify-content: space-between;
+    }
+  
+    #surprise .desktop-only img[src*="planchette"] {
+      height: 5rem;
+      transform: rotate(100deg);
+      transform: scale(0);
+      transition: transform 200ms;
+      transition-delay: 0.5s;
+    }
+  
+    #surprise .desktop-only img[src*="cristal"] {
+      height: 4.5rem;
+      transform: rotate(15deg);
+      transform: scale(0);
+      transition: transform 200ms;
+      transition-delay: 1s;
+    }
+  
+    #surprise .desktop-only:hover img[src*="book"] {
+      transform: scale(1);
+    }
+  
+    #surprise .desktop-only:hover img[src*="planchette"] {
+      transform: scale(1);
+    }
+  
+    #surprise .desktop-only:hover img[src*="cristal"] {
+      transform: scale(1);
+    }
+  
+    #surprise .desktop-only:hover span:nth-child(1) {
+      opacity: 1;
+    }
+  
+    #surprise .desktop-only:hover span:nth-child(2) {
+      opacity: 1;
+    }
+  
+    #surprise .desktop-only:hover span:nth-child(3) {
+      opacity: 1;
+    }
+  
+    #surprise .desktop-only:hover span:nth-child(1) b,
+    #surprise .desktop-only:hover span:nth-child(2) b,
+    #surprise .desktop-only:hover span:nth-child(3) b {
+      color: var(--blue-light);
+    }
+  }
+  
