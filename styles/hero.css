@@ -2,6 +2,8 @@
     background-image: url(../assets/img/hero-background.svg);
     background-position: center;
     background-size: cover;
+    padding-bottom: 12rem;
+    animation: bg 1.5s ease-out both;
 }
 
 #hero nav {
@@ -33,9 +35,9 @@
     z-index: -1;
     -webkit-transform: scaleX(0); /* Prefixo para Safari */
     transform: scaleX(0);
-    -webkit-transition: -webkit-transform 300ms ease; /* Prefixo para Safari */
-    transition: -webkit-transform 300ms ease; /* Safari novamente */
-    transition: transform 300ms ease;
+    -webkit-transition: -webkit-transform 250ms ease; /* Prefixo para Safari */
+    transition: -webkit-transform 250ms ease; /* Safari novamente */
+    transition: transform 250ms ease;
 }
 
 #hero a:hover::before {
@@ -43,12 +45,76 @@
     transform: scaleX(1);
 }
 
+#hero header {
+    padding-block: 3rem;
+    padding-inline: 1.25rem;
+    max-width: var(--max-width);
+    margin-inline: auto;
+    text-align: center;
+}
+
+#hero header h1 {
+    font: bold 1.75rem/100% var(--font-family);
+    color: var(--text-title);
+    opacity: 0;
+    animation: bg 1.5s ease both;
+}
+
+#hero header p {
+    font: 400 0.875rem/1.4 var(--font-family);
+    color: var(--text-body);
+    opacity: 0;
+    animation: appear 1s 750ms ease-out both;
+}
+
+@keyframes appear {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bg {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
 @media screen and (min-width: 80em) {
+    #hero {
+        padding-bottom: 24rem;
+    }
+
     #hero nav {
-        padding: 3.5rem 10rem;
+        padding: 3.5rem;
     }
 
     #hero nav img + img {
         display: none;
+    }
+
+    #hero header {
+        padding-top: 10.25rem;
+    }
+
+    #hero header h1 + h1,
+    #hero header p + p {
+        display: none;
+    }
+
+    #hero header h1 {
+        font-size: 3rem;
+    }
+
+    #hero header p {
+        font-size: 1.25rem;
+        margin-top: 1rem;
     }
 }
