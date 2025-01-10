@@ -1,0 +1,21 @@
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.desktop-only {
+    display: none;
+}
+
+@media (min-width: 80em) {
+    .desktop-only {
+        display: inline-block;
+    }
+}
