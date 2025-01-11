@@ -83,7 +83,7 @@ section#month .kit-visuals .arrow-purple {
 /* Texto para o marcador temático */
 section#month .kit-visuals .label-bookmark {
     position: absolute;
-    left: calc(50% + 50px);
+    left: calc(50% + 40px);
     top: calc(50% + 155px);
 
     color: var(--text-body);
@@ -111,7 +111,7 @@ section#month .kit-visuals .arrow-pin {
 /* Texto do broche exclusivo */
 section#month .kit-visuals .label-pin {
     position: absolute;
-    left: calc(50% - 170px);
+    left: calc(50% - 150px);
     top: calc(50% - 5px);
 
     color: var(--text-body);
@@ -129,7 +129,7 @@ section#month .kit-visuals .arrow-book {
 /* Texto para o livro em capa dura */
 section#month .kit-visuals .label-book {
     position: absolute;
-    left: calc(50% - 165px);
+    left: calc(50% - 150px);
     top: calc(50% - 130px);
 
     color: var(--text-body);

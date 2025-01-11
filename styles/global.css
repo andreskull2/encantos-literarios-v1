@@ -35,6 +35,7 @@ html {
 
 body {
     background-color: var(--shape-background);
+    overflow-x: hidden;
 }
 
 
