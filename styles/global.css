@@ -29,9 +29,14 @@
     --font-family: 'Raleway', sans-serif;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--shape-background);
 }
+
 
 a {
     color: inherit;
