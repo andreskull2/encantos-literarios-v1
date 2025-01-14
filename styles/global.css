@@ -44,6 +44,11 @@ a {
     text-decoration: none;
 }
 
+@media (min-width: 48em) {
+    :root {
+        --max-width: 48em;
+    }
+}
 
 @media (min-width: 64em) {
     :root {
