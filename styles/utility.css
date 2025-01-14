@@ -18,6 +18,18 @@
     gap: 1rem;
 }
 
+@media (min-width: 48em) {
+    .desktop-only {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 64em) {
+    .desktop-only {
+        display: inline-block;
+    }
+}
+
 @media (min-width: 80em) {
     .desktop-only {
         display: inline-block;
