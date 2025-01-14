@@ -41,6 +41,55 @@
     left: 1.2rem;
     top: 70%;
 }
+@media (min-width: 48em) {
+    #surprise {
+        padding-block: 7.5rem;
+    }
+    #surprise div + div {
+        display: none;
+    }
+    #surprise .desktop-only {
+        display: block;
+    }
+    #surprise .desktop-only img[src*="book"] {
+        height: 5.5rem;
+        transform: rotate(21deg) scale(0);
+        -webkit-transform: rotate(21deg) scale(0); /* Prefixo */
+        margin-inline: auto;
+        transition: transform 200ms ease-in-out;
+        -webkit-transition: -webkit-transform 200ms ease-in-out; /* Prefixo */
+    }
+    #surprise .desktop-only h2 {
+        text-align: center;
+        font: 400 1.2rem/1.2 var(--font-family);
+        color: var(--text-body);
+    }
+}
+
+@media (min-width: 64em) {
+    #surprise {
+        padding-block: 7.5rem;
+    }
+    #surprise div + div {
+        display: none;
+    }
+    #surprise .desktop-only {
+        display: block;
+    }
+    #surprise .desktop-only img[src*="book"] {
+        height: 5.5rem;
+        transform: rotate(21deg) scale(0);
+        -webkit-transform: rotate(21deg) scale(0); /* Prefixo */
+        margin-inline: auto;
+        transition: transform 200ms ease-in-out;
+        -webkit-transition: -webkit-transform 200ms ease-in-out; /* Prefixo */
+    }
+    #surprise .desktop-only h2 {
+        text-align: center;
+        font: 400 1.5rem/1.4 var(--font-family);
+        color: var(--text-body);
+    }
+}
 
 @media (min-width: 80em) {
     #surprise {
@@ -62,7 +111,7 @@
         margin-inline: auto;
         transition: transform 200ms ease-in-out;
         -webkit-transition: -webkit-transform 200ms ease-in-out; /* Prefixo */
-}
+    }
     }
 
     #surprise .desktop-only h2 {

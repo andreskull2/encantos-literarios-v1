@@ -123,7 +123,7 @@ section#month .kit-visuals .label-book {
     }
     section#month .grid:nth-child(1) img {
         width: 2rem;
-    }
+    }   
     section#month .grid:nth-child(1) h1 {
         font: 600 2rem/1.4 var(--font-family);
     }
@@ -132,7 +132,7 @@ section#month .kit-visuals .label-book {
     }
     section#month .kit-visuals {
         height: 520px; /* Altura da área (ajuste conforme necessário) */
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
     } 
     section#month .kit-visuals .book {
         width: 15rem;
@@ -200,7 +200,7 @@ section#month .kit-visuals .label-book {
     }
     section#month .kit-visuals {
         height: 720px; /* Altura da área (ajuste conforme necessário) */
-        border: 1px solid green;
+        /* border: 1px solid green;*/
     } 
     section#month .kit-visuals .book {
         width: 20rem;
@@ -269,7 +269,7 @@ section#month .kit-visuals .label-book {
     }
     section#month .kit-visuals {
         height: 920px; /* Altura da área (ajuste conforme necessário) */
-        border: 1px solid red;
+        /* border: 1px solid red;*/
     } 
     section#month .kit-visuals .book {
         width: 26rem;
