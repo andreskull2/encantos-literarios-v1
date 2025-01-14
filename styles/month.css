@@ -3,10 +3,7 @@ section#month {
     margin-inline: auto;
     padding-block: 6.5rem 4rem;
 }
-
 /* --------------------- Primeiro Filho --------------------------------------------- */
-/*  */
-
 /* Estrela roxa */
 section#month .grid:nth-child(1) img {
     width: 1.25rem;
@@ -19,28 +16,24 @@ section#month .grid:nth-child(1) h1 {
     color: var(--text-title);
     font: 600 1.5rem/100% var(--font-family);
 }
-
 /* Centraliza o p */
 section#month .grid:nth-child(1) {
     text-align: center;
     gap: 0.5rem;
 }
-
 /* P - Estilo do paragrafo */
 section#month .grid:nth-child(1) p {
     color: var(--text-body);
     font: 400 0.875rem/1.4 var(--font-family);
 }
-
 /* --------------------------- Segundo Filho --------------------------------------- */
-/*  */
+/* Container Kit Visuals */
 section#month .kit-visuals {
     position: relative;
     width: 100%;
     height: 400px; /* Altura da área (ajuste conforme necessário) */
 } 
-
-/* Livro - Elelmento central */
+/* Livro - Elemento central */
 section#month .kit-visuals .book {
     position: absolute;
     z-index: 0;
@@ -50,7 +43,6 @@ section#month .kit-visuals .book {
     height: 14rem;
     transform: translate(-50%, -50%);
 }
-
 /* Marcador amarelo */
 section#month .kit-visuals .bookmark-yellow {
     position: absolute;
@@ -60,17 +52,15 @@ section#month .kit-visuals .bookmark-yellow {
     top: calc(50% - 154px); /* Ajuste vertical */
     transform: rotate(12deg);
 }
-
 /* Marcador roxo */
 section#month .kit-visuals .bookmark-purple {
     position: absolute;
     width: 5rem;
     z-index: -2;
-    left: calc(50% + 103px); /* Ajuste horizontal */
-    top: calc(50% - 115px); /* Ajuste vertical */
+    left: calc(50% + 103px); 
+    top: calc(50% - 115px); 
     transform: rotate(22deg);
 }
-
 /* Seta do marcador roxo */
 section#month .kit-visuals .arrow-purple {
     position: absolute;
@@ -79,17 +69,14 @@ section#month .kit-visuals .arrow-purple {
     left: calc(50% + 95px);
     top: calc(50% + 80px);
 }
-
 /* Texto para o marcador temático */
 section#month .kit-visuals .label-bookmark {
     position: absolute;
     left: calc(50% + 40px);
     top: calc(50% + 155px);
-
     color: var(--text-body);
     font: 300 0.625rem/100% var(--font-family);
 }
-
 /* Broche */
 section#month .kit-visuals .pin {
     position: absolute;
@@ -99,7 +86,6 @@ section#month .kit-visuals .pin {
     top: calc(50% + 50px);
     transform: rotate(-8deg);
 } 
-
 /* Seta do broche */
 section#month .kit-visuals .arrow-pin {
     position: absolute;
@@ -107,17 +93,14 @@ section#month .kit-visuals .arrow-pin {
     left: calc(50% - 145px);
     top: calc(50% + 15px);
 }
-
 /* Texto do broche exclusivo */
 section#month .kit-visuals .label-pin {
     position: absolute;
     left: calc(50% - 150px);
     top: calc(50% - 5px);
-
     color: var(--text-body);
     font: 300 0.625rem/100% var(--font-family);
 }
-
 /* Seta do livro */
 section#month .kit-visuals .arrow-book {
     position: absolute;
@@ -125,14 +108,170 @@ section#month .kit-visuals .arrow-book {
     left: calc(50% - 120px);
     top: calc(50% - 110px);
 }
-
 /* Texto para o livro em capa dura */
 section#month .kit-visuals .label-book {
     position: absolute;
     left: calc(50% - 150px);
     top: calc(50% - 130px);
-
     color: var(--text-body);
     font: 300 0.625rem/100% var(--font-family);
 }
-
+/* --------------------------- 1024px --------------------------------------- */
+@media (min-width: 64em) {
+    section#month {
+        padding-block: 3rem 3rem;
+    }
+    /* Primeiro filho */ 
+    section#month .grid:nth-child(1) img {
+        width: 2rem;
+    }
+    section#month .grid:nth-child(1) h1 {
+        font: 600 2rem/1.4 var(--font-family);
+    }
+    section#month .grid:nth-child(1) p {
+        font: 400 1rem/1.4 var(--font-family);
+    }
+    /* Segundo Filho */
+    section#month .kit-visuals {
+        height: 720px; /* Altura da área (ajuste conforme necessário) */
+        border: 1px solid green;
+    } 
+    /* Livro - Elelmento central */
+    section#month .kit-visuals .book {
+        width: 20rem;
+        height: 30rem;
+    }
+    /* Marcador amarelo */
+    section#month .kit-visuals .bookmark-yellow {
+        width: 9rem;
+        left: calc(50% + 115px); /* Ajuste horizontal */
+        top: calc(50% - 270px); /* Ajuste vertical */
+        }
+    /* Marcador roxo */                                                     
+    section#month .kit-visuals .bookmark-purple {
+        width: 9rem;
+        left: calc(50% + 200px); /* Ajuste horizontal */
+        top: calc(50% - 200px); /* Ajuste vertical */
+    }
+    /* Seta do marcador roxo */
+    section#month .kit-visuals .arrow-purple {
+        width: 6rem;
+        left: calc(50% + 200px);
+        top: calc(50% + 150px);
+    } 
+    section#month .kit-visuals .label-bookmark {
+        left: calc(50% + 160px);
+        top: calc(50% + 260px);
+        font: 300 0.875rem/1.2 var(--font-family);
+    }
+    section#month .kit-visuals .pin {
+        height: 10rem;
+        left: calc(50% - 245px);
+        top: calc(50% + 100px);
+    }   
+    section#month .kit-visuals .arrow-pin {
+        height: 5rem;
+        left: calc(50% - 270px);
+        top: calc(50% + 50px);
+    } 
+    section#month .kit-visuals .label-pin {
+        left: calc(50% - 320px);
+        top: calc(50% + 15px);
+        font: 300 0.875rem/1.2 var(--font-family);
+    }
+    section#month .kit-visuals .arrow-book {
+        width: 6rem;
+        left: calc(50% - 230px);
+        top: calc(50% - 220px);
+    }
+    section#month .kit-visuals .label-book {
+        left: calc(50% - 300px); 
+        top: calc(50% - 250px);
+        font: 300 0.875rem/1.2 var(--font-family);
+    }
+}
+/* --------------------------- 1280px --------------------------------------- */
+@media (min-width: 80em) {
+    section#month {
+        padding-block: 8rem 5rem;   
+        padding-inline: 2rem;
+    }
+    /* --------------------- Primeiro Filho --------------------------------------------- */
+    /* Estrela roxa */
+    section#month .grid:nth-child(1) img {
+        width: 2rem;
+    }
+    /* H1 - Conheça - Título */
+    section#month .grid:nth-child(1) h1 {
+        font: 600 2rem/100% var(--font-family);
+    }
+    /* P - Estilo do paragrafo */
+    section#month .grid:nth-child(1) p {
+        font: 400 1rem/1.4 var(--font-family);
+    }
+    /* --------------------------- Segundo Filho --------------------------------------- */
+    section#month .kit-visuals {
+        height: 920px; /* Altura da área (ajuste conforme necessário) */
+        border: 1px solid red;
+    } 
+    /* Livro - Elelmento central */
+    section#month .kit-visuals .book {
+        width: 26rem;
+        height: 36rem;
+    }
+    /* Marcador amarelo */
+    section#month .kit-visuals .bookmark-yellow {
+        width: 12rem;
+        height: 50rem;
+        left: calc(50% + 150px); /* Ajuste horizontal */
+        top: calc(50% - 510px); /* Ajuste vertical */
+    }
+    /* Marcador roxo */                                                     
+    section#month .kit-visuals .bookmark-purple {
+        width: 12rem;
+        left: calc(50% + 265px); /* Ajuste horizontal */
+        top: calc(50% - 265px); /* Ajuste vertical */
+    }
+    /* Seta do marcador roxo */
+    section#month .kit-visuals .arrow-purple {
+        width: 10.5rem;
+        left: calc(50% + 235px);
+        top: calc(50% + 195px);
+    }
+    /* Texto para o marcador temático */
+    section#month .kit-visuals .label-bookmark {
+        left: calc(50% + 200px);
+        top: calc(50% + 370px);
+        font: 300 1rem/1.4 var(--font-family);
+    }
+    /* Broche */
+    section#month .kit-visuals .pin {
+        height: 16rem;
+        left: calc(50% - 350px);
+        top: calc(50% + 110px);
+    }
+    /* Seta do broche */
+    section#month .kit-visuals .arrow-pin {
+        height: 8rem;
+        left: calc(50% - 390px);
+        top: calc(50% + 30px);
+    } 
+    /* Texto do broche exclusivo */
+    section#month .kit-visuals .label-pin {
+        left: calc(50% - 420px);
+        top: calc(50% - 5px);
+        font: 300 1rem/1.4 var(--font-family);
+    }
+    /* Seta do livro */
+    section#month .kit-visuals .arrow-book {
+        width: 9rem;
+        left: calc(50% - 320px);
+        top: calc(50% - 295px);
+    }
+    /* Texto para o livro em capa dura */
+    section#month .kit-visuals .label-book {
+        left: calc(50% - 400px); 
+        top: calc(50% - 330px);
+        font: 300 1rem/1.4 var(--font-family);
+    }
+}
