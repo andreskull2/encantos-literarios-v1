@@ -224,7 +224,6 @@ section#month .kit-visuals .label-book {
     section#month .kit-visuals .label-bookmark {
         left: calc(50% + 160px);
         top: calc(50% + 260px);
-        font: 300 0.875rem/1.2 var(--font-family);
     }
     section#month .kit-visuals .pin {
         height: 10rem;
@@ -239,7 +238,6 @@ section#month .kit-visuals .label-book {
     section#month .kit-visuals .label-pin {
         left: calc(50% - 320px);
         top: calc(50% + 15px);
-        font: 300 0.875rem/1.2 var(--font-family);
     }
     section#month .kit-visuals .arrow-book {
         width: 6rem;
@@ -249,7 +247,6 @@ section#month .kit-visuals .label-book {
     section#month .kit-visuals .label-book {
         left: calc(50% - 300px); 
         top: calc(50% - 250px);
-        font: 300 0.875rem/1.2 var(--font-family);
     }
 }
 /* --------------------------- 1280px --------------------------------------- */

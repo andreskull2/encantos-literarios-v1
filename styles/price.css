@@ -1,0 +1,156 @@
+section#price {
+    background: url(../assets/img/pricing-background.png) no-repeat center/cover;
+    padding-top: 8rem;
+}
+
+section#price h1 {
+    text-align: center;
+    margin-inline: auto;
+    max-width: var(--max-width);
+    color: var(--text-body);
+    font: 600 1.5rem/1 var(--font-family);
+    margin-bottom: 3rem;
+}
+
+section#price h1 + div {
+    margin-left: 11.5rem;
+    overflow-x: scroll;
+    margin-right: 3.5rem;
+}
+
+section#price h1 + div::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+section#price h1 + div div:nth-child(4) {
+    border-color: var(--shape-hover);
+    background-color: var(--shape-hover);
+}
+
+section#price h1 + div div:nth-child(4) .flex {
+    justify-content: space-between;
+}
+
+section#price h1 + div div:nth-child(4) .flex span:nth-child(1) {
+    color: var(--pink-light);
+}
+
+section#price h1 + div div:nth-child(4) .flex b {
+    border-radius: 999px;
+    text-align: center;
+    padding: 0.5rem 1.25rem;
+    background-color: var(--shape-stroke);
+    color: var(--text-body);
+    font-size: 0.625rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+section#price h1 + div:nth-child(4) ul[role="list"] {
+    margin-top: 3rem;
+}
+
+section#price h1 + div div:nth-child(4) a {
+    text-wrap: nowrap;
+    background-color: var(--pink-dark);   
+}
+
+section#price h1 + div div:nth-child(4) a::before {
+    background-color: var(--pink-base);
+}
+
+section#price h1 + div div:nth-child(5) ul[role="list"] {
+    margin-top: 2rem;
+}
+
+section#price h1 + div .card {
+    border: 1px solid var(--shape-stroke);
+    display: grid;
+    border-radius: 1.5rem;
+    width: 17rem;
+    height: 25rem;
+    background-color: var(--shape-base);
+    padding: 2rem;
+    font-family: var(--font-family);
+}
+
+section#price h1 + div .card span:nth-child(1) {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--blue-light);
+}
+
+section#price h1 + div .card h2 {
+    margin-block: 1.5rem 0.5rem;
+    color: var(--text-title);
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+section#price h1 + div .card h2 small {
+    font-size: 1.25rem;
+}
+
+section#price h1 + div .card h2 + span {
+    color: var(--text-label);
+    opacity: 0.9;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+section#price h1 + div .card ul[role="list"] {
+    margin-block: 5rem 1.5rem;
+    display: grid;
+    gap: 0.75rem;
+}
+
+section#price h1 + div .card ul[role="list"] li {
+    text-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    color: var(--text-label);
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    gap: 0.5rem;
+}
+
+section#price h1 + div .card ul[role="list"] li img {
+    aspect-ratio: 1;
+    width: 0.75rem;
+}
+
+section#price h1 + div .card a {
+    max-width: 13rem;
+    text-wrap: nowrap;
+    position: relative;
+    border-radius: 0.5rem;
+    background-color: var(--blue-dark);
+    padding: 0.75rem;
+    text-align: center;
+    color: var(--text-title);
+    font-weight: 600;
+    font-size: 0.875rem;
+    z-index: 1;
+}
+
+section#price h1 + div .card a::before {
+    content: "";
+    position: absolute;
+    background-color: var(--blue-mid);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+    z-index: -1;
+    clip-path: circle(0%);
+    transition: clip-path 400ms ease;
+}
+
+section#price h1 + div .card a:hover::before {
+    clip-path: circle(100%);
+}
