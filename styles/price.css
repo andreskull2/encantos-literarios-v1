@@ -3,8 +3,8 @@
     background: url(../assets/img/pricing-background.png) no-repeat center/cover;
     padding-top: 4rem;
     position: relative;
-    border: 1px solid red;
     overflow-y: hidden;
+    overflow-x: hidden;
     padding-bottom: 4rem;
 }
 /* Container - Blur */
@@ -19,7 +19,6 @@
     z-index: -1;
     filter: blur(200px);
 }
-
 /* ---------------------------------------- */
 /* Título - Call to action - Assinaturas */
 #price h1 {
@@ -246,7 +245,98 @@ section#price h1 + div .card-popular:hover {
 section#price h1 + div .card-popular:hover img[src*="star"] {
     rotate: 30deg;
 }
+/* --------------------------- 768px --------------------------------------- */
+@media (min-width: 48em) {
+    #price h1 + div .s1, 
+    #price h1 + div .s2, 
+    #price h1 + div .s3,
+    #price h1 + div .s4,
+    #price h1 + div .rbbt {
+        display: none;
+    }
 
+    #price h1 + div {
+        flex-direction: row;
+        max-width: var(--max-width);
+        padding-block: 2rem 4rem;
+        gap: 1rem;
+    }
+    #price h1 {
+        font: 600 2rem/1 var(--font-family);
+        margin-bottom: 3.5rem;
+    }
+    #price h1 + div .card {
+        width: 14rem;
+        height: 22rem;
+        padding: 1.5rem;
+    }
+    #price h1 + div .card .plan-name:nth-child(1) {
+        font-size: 0.875rem;
+    }
+    #price h1 + div .card h2 {
+        margin-block: 1.5rem 0.5rem;
+        font-size: 1.8rem;
+    }
+    #price h1 + div .card h2 small {
+        font-size: 0.875rem;
+    }
+    #price h1 + div .card ul[role="list"] li {
+        white-space: nowrap;
+        font-size: 0.6rem;
+        line-height: 1.2;
+        gap: 0.5rem;
+    }
+    #price h1 + div .card ul[role="list"] li img {
+        aspect-ratio: 1;
+        width: 0.5rem;
+    }
+    section#price h1 + div .card a {
+        max-width: 10rem; /* Define a largura máxima */
+        height: 2rem; /* Define uma altura consistente */
+        font-size: 0.75rem;
+    }
+    section#price h1 + div .card:hover {
+        scale: 1.03;
+    }
+    
+    #price h1 + div .card-popular {
+        width: 14rem;
+        height: 22rem;
+        padding: 1.5rem;
+    }
+    #price h1 + div .card-popular .plan-name:nth-child(1) {
+        font-size: 0.875rem;
+    }
+    #price h1 + div .card-popular .semestral {
+        font-size: 0.875rem;
+    }
+    #price h1 + div .card-popular .label-popular {
+        padding: 0.5rem 1rem;
+        font-size: 0.5rem;
+    }
+    #price h1 + div .card-popular h2 {
+        margin-block: 1.5rem 0.5rem;
+        font-size: 1.8rem;
+    }
+    #price h1 + div .card-popular h2 small {
+        font-size: 0.875rem;
+    }
+    #price h1 + div .card-popular ul[role="list"] li {
+        white-space: nowrap;
+        font-size: 0.6rem;
+        line-height: 1.2;
+        gap: 0.5rem;
+    }
+    #price h1 + div .card-popular ul[role="list"] li img {
+        aspect-ratio: 1;
+        width: 0.5rem;
+    }
+    section#price h1 + div .card-popular a {
+        max-width: 10rem; /* Define a largura máxima */
+        height: 2rem; /* Define uma altura consistente */
+        font-size: 0.75rem;
+    }
+}
 
 
 
