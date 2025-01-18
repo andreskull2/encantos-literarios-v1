@@ -1,4 +1,4 @@
-/* Container - BG */
+/* Container 350px - BG */
 #price {
     background: url(../assets/img/pricing-background.png) no-repeat center/cover;
     padding-top: 4rem;
@@ -7,7 +7,7 @@
     overflow-x: hidden;
     padding-bottom: 4rem;
 }
-/* Container - Blur */
+/* Container - BG Blur */
 #price::before {
     content: "";
     position: absolute;
@@ -19,8 +19,7 @@
     z-index: -1;
     filter: blur(200px);
 }
-/* ---------------------------------------- */
-/* Título - Call to action - Assinaturas */
+/* -------- Header - Assinaturas -------- */
 #price h1 {
     z-index: 1;
     text-align: center;
@@ -30,7 +29,6 @@
     font: 600 1.5rem/1 var(--font-family);
     margin-bottom: 3rem;
 }
-
 #price h1 + div {
     flex-direction: column; /* Empilhamento 375px */
     justify-content: center;
@@ -40,20 +38,16 @@
     max-width: var(--max-width);
     gap: 2.5rem;
 }
-
-/* ------------------------------------------ */
-/* Analisar essas estrelas quando fizer o Desktop */
+/* --- Analisar essas estrelas quando fizer o Desktop --- */
 #price h1 + div img[src*="star"] {
     transition: transform 500ms;
 }
-
 #price h1 + div img[src*="star"]:hover {
     transform: rotate(180deg);
 }
-
-/* ------------------------------------------ */
-/* Cards Mensal(1) e Anual(3) */
-#price h1 + div .card {
+/* --- Cards Mensal(1) e Anual(3) e Semestral(2) --- */
+#price h1 + div .card,
+#price h1 + div .card-popular {
     border: 1px solid var(--shape-stroke);
     display: grid;
     border-radius: 1.5rem;
@@ -71,18 +65,21 @@
     color: var(--blue-light);
 }
 /* H2 - Preço Maior */
-#price h1 + div .card h2 {
+#price h1 + div .card h2,
+#price h1 + div .card-popular h2 {
     margin-block: 1.5rem 0.5rem;
     color: var(--text-title);
     font-weight: 600;
     font-size: 2.2rem;
 }
 /* H2 - /por mês */
-#price h1 + div .card h2 small {
+#price h1 + div .card h2 small,
+#price h1 + div .card-popular h2 small {
     font-size: 1.25rem;
 }
 /* SPAN - Preço anual */
-#price h1 + div .card h2 + span {
+#price h1 + div .card h2 + span,
+#price h1 + div .card-popular h2 + span {
     color: var(--text-label);
     opacity: 0.9;
     font-weight: 400;
@@ -90,13 +87,15 @@
     line-height: 1.4;
 }
 /* UL - Global*/
-#price h1 + div .card ul[role="list"] {
+#price h1 + div .card ul[role="list"],
+#price h1 + div .card-popular ul[role="list"] {
     margin-block: 2rem 1.5rem;
     display: grid;
     gap: 0.75rem;
 }
 /* LI - Lista de features */
-#price h1 + div .card ul[role="list"] li {
+#price h1 + div .card ul[role="list"] li,
+#price h1 + div .card-popular ul[role="list"] li {
     white-space: nowrap;
     display: flex;
     align-items: center;
@@ -107,12 +106,14 @@
     gap: 0.5rem;
 }
 /* Icone de features */
-#price h1 + div .card ul[role="list"] li img {
+#price h1 + div .card ul[role="list"] li img,
+#price h1 + div .card-popular ul[role="list"] li img {
     aspect-ratio: 1;
     width: 0.75rem;
 }
 /* Botão Azul*/
-section#price h1 + div .card a {
+section#price h1 + div .card a,
+section#price h1 + div .card-popular a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,29 +131,17 @@ section#price h1 + div .card a {
     margin: 0 auto; /* Centraliza horizontalmente se necessário */
 }
 /* Hover sobre o card */
-section#price h1 + div .card:hover {
+section#price h1 + div .card:hover,
+section#price h1 + div .card-popular:hover {
     scale: 1.05;
     background-color: var(--shape-hover);
 }
 /* Animação nos bullets */
-section#price h1 + div .card:hover img[src*="star"] {
+section#price h1 + div .card:hover img[src*="star"],
+section#price h1 + div .card-popular:hover img[src*="star"] {
     rotate: 30deg;
 }
-/* ------------------------------------------ */
-
-/* ------------------------------------------ */
-/* Card Semestral */
-#price h1 + div .card-popular {
-    border: 1px solid var(--shape-stroke);
-    display: grid;
-    border-radius: 1.5rem;
-    width: 17rem;
-    height: 25rem;
-    background-color: var(--shape-base);
-    padding: 2rem;
-    font-family: var(--font-family);
-    transition: scale 600ms ease, background-color 500ms ease;
-}
+/* --- Card Semestral(2) - Herdado --- */
 /* Label Semestral - Popular */
 #price h1 + div .card-popular .plan-labels {
     display: flex;
@@ -160,9 +149,7 @@ section#price h1 + div .card:hover img[src*="star"] {
     align-items: center;
 }
 /* Label Semestral */
-#price h1 + div .card-popular .semestral {
-    font-size: 1rem;
-    font-weight: 600;
+#price h1 + div .card-popular .semestral { 
     color: var(--pink-light);
 }
 /* Label Popular */
@@ -176,75 +163,18 @@ section#price h1 + div .card:hover img[src*="star"] {
     letter-spacing: 0.05em;
     text-transform: uppercase;
 }
-
-/* H2 - Preço Maior */
-#price h1 + div .card-popular h2 {
-    margin-block: 1.5rem 0.5rem;
-    color: var(--text-title);
-    font-weight: 600;
-    font-size: 2.2rem;
-}
-/* H2 - /por mês */
-#price h1 + div .card-popular h2 small {
-    font-size: 1.25rem;
-}
-/* SPAN - Preço anual */
-#price h1 + div .card-popular h2 + span {
-    color: var(--text-label);
-    opacity: 0.9;
-    font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 1.4;
-}
-/* UL - Global*/
-#price h1 + div .card-popular ul[role="list"] {
-    margin-block: 2rem 1.5rem;
-    display: grid;
-    gap: 0.75rem;
-}
-/* LI - Lista de features */
-#price h1 + div .card-popular ul[role="list"] li {
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    color: var(--text-label);
-    font-weight: 400;
-    font-size: 0.75rem;
-    line-height: 1.4;
-    gap: 0.5rem;
-}
-/* Icone de features */
-#price h1 + div .card-popular ul[role="list"] li img {
-    aspect-ratio: 1;
-    width: 0.75rem;
-}
+/* H2 - Preço Maior - Herdado */
+/* H2 - /por mês - Herdado */
+/* SPAN - Preço anual - Herdado */
+/* UL - Global - Herdado */
+/* LI - Lista de features - Herdado */
+/* Icone de features - Herdado */
 /* Botão Pink*/
 section#price h1 + div .card-popular a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%; /* Garante que o botão ocupe toda a largura disponível no card */
-    max-width: 13rem; /* Define a largura máxima */
-    height: 3rem; /* Define uma altura consistente */
-    border-radius: 0.5rem;
     background-color: var(--pink-dark);
-    color: var(--text-title);
-    font-size: 0.875rem;
-    font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-    padding: 0; /* Remove padding redundante, já temos altura fixa */
-    margin: 0 auto; /* Centraliza horizontalmente se necessário */
 }
-/* Hover sobre o card */
-section#price h1 + div .card-popular:hover {
-    scale: 1.05;
-    background-color: var(--shape-hover);
-}
-/* Animação nos bullets */
-section#price h1 + div .card-popular:hover img[src*="star"] {
-    rotate: 30deg;
-}
+/* Hover sobre o card - Herdado */
+/* Animação nos bullets - Herdado */
 /* --------------------------- 768px --------------------------------------- */
 @media (min-width: 48em) {
     #price h1 + div .s1, 
@@ -254,7 +184,6 @@ section#price h1 + div .card-popular:hover img[src*="star"] {
     #price h1 + div .rbbt {
         display: none;
     }
-
     #price h1 + div {
         flex-direction: row;
         max-width: var(--max-width);
@@ -265,32 +194,39 @@ section#price h1 + div .card-popular:hover img[src*="star"] {
         font: 600 2rem/1 var(--font-family);
         margin-bottom: 3.5rem;
     }
-    #price h1 + div .card {
+    #price h1 + div .card,
+    #price h1 + div .card-popular {
         width: 14rem;
         height: 22rem;
         padding: 1.5rem;
     }
-    #price h1 + div .card .plan-name:nth-child(1) {
+    #price h1 + div .card .plan-name:nth-child(1),
+    #price h1 + div .card-popular .plan-name:nth-child(1) {
         font-size: 0.875rem;
     }
-    #price h1 + div .card h2 {
+    #price h1 + div .card h2,
+    #price h1 + div .card-popular h2 {
         margin-block: 1.5rem 0.5rem;
         font-size: 1.8rem;
     }
-    #price h1 + div .card h2 small {
+    #price h1 + div .card h2 small,
+    #price h1 + div .card-popular h2 small {
         font-size: 0.875rem;
     }
-    #price h1 + div .card ul[role="list"] li {
+    #price h1 + div .card ul[role="list"] li,
+    #price h1 + div .card-popular ul[role="list"] li {
         white-space: nowrap;
         font-size: 0.6rem;
         line-height: 1.2;
         gap: 0.5rem;
     }
-    #price h1 + div .card ul[role="list"] li img {
+    #price h1 + div .card ul[role="list"] li img,
+    #price h1 + div .card-popular ul[role="list"] li img {
         aspect-ratio: 1;
         width: 0.5rem;
     }
-    section#price h1 + div .card a {
+    section#price h1 + div .card a,
+    section#price h1 + div .card-popular a {
         max-width: 10rem; /* Define a largura máxima */
         height: 2rem; /* Define uma altura consistente */
         font-size: 0.75rem;
@@ -298,15 +234,8 @@ section#price h1 + div .card-popular:hover img[src*="star"] {
     section#price h1 + div .card:hover {
         scale: 1.03;
     }
-    
-    #price h1 + div .card-popular {
-        width: 14rem;
-        height: 22rem;
-        padding: 1.5rem;
-    }
-    #price h1 + div .card-popular .plan-name:nth-child(1) {
-        font-size: 0.875rem;
-    }
+    /* Card 2 - Herdado */
+    /* Label mensal e anual - Herdados */
     #price h1 + div .card-popular .semestral {
         font-size: 0.875rem;
     }
@@ -314,35 +243,9 @@ section#price h1 + div .card-popular:hover img[src*="star"] {
         padding: 0.5rem 1rem;
         font-size: 0.5rem;
     }
-    #price h1 + div .card-popular h2 {
-        margin-block: 1.5rem 0.5rem;
-        font-size: 1.8rem;
-    }
-    #price h1 + div .card-popular h2 small {
-        font-size: 0.875rem;
-    }
-    #price h1 + div .card-popular ul[role="list"] li {
-        white-space: nowrap;
-        font-size: 0.6rem;
-        line-height: 1.2;
-        gap: 0.5rem;
-    }
-    #price h1 + div .card-popular ul[role="list"] li img {
-        aspect-ratio: 1;
-        width: 0.5rem;
-    }
-    section#price h1 + div .card-popular a {
-        max-width: 10rem; /* Define a largura máxima */
-        height: 2rem; /* Define uma altura consistente */
-        font-size: 0.75rem;
-    }
+    /* H2 - Preço Maior - Herdados */
+    /* H2 - small - Herdados */ 
+    /* UL - Global - Herdados */
+    /* Icone de features - Herdado */
+    /* Botão Pink* - Herdado */
 }
-
-
-
-
-
-
-
-
-
