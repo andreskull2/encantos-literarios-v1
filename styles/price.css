@@ -317,12 +317,11 @@ section#price h1 + div .card-popular a {
     #price h1 + div .s1, 
     #price h1 + div .s2, 
     #price h1 + div .s3,
-    #price h1 + div .s4,
-    #price h1 + div .rbbt {
+    #price h1 + div .s4 {
         display: none;
     }
     #price h1 + div {
-        padding-block: 2rem 6rem;
+        padding-block: 6rem 6rem;
         gap: 2rem; 
     }
     #price h1 + div .card,
@@ -330,6 +329,13 @@ section#price h1 + div .card-popular a {
         width: 22rem;
         height: 30rem;
         padding: 3rem;
+        position: relative;
+    }
+    #price h1 + div .rbbt {
+        display: block;
+        position: absolute;
+        top: -3.2rem;
+        left: 3rem;
     }
     #price h1 + div .card .plan-name:nth-child(1),
     #price h1 + div .card-popular .plan-name:nth-child(1) {
