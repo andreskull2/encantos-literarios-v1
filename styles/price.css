@@ -238,6 +238,7 @@ section#price h1 + div .card-popular a {
     /* Label mensal e anual - Herdados */
     #price h1 + div .card-popular .semestral {
         font-size: 0.875rem;
+        font-weight: 600;
     }
     #price h1 + div .card-popular .label-popular {
         padding: 0.5rem 1rem;
@@ -248,4 +249,62 @@ section#price h1 + div .card-popular a {
     /* UL - Global - Herdados */
     /* Icone de features - Herdado */
     /* Botão Pink* - Herdado */
+}
+/* --------------------------- 1024px --------------------------------------- */
+@media (min-width: 64em) {
+    #price h1 + div {
+        padding-block: 2rem 4rem;
+        gap: 2rem; 
+    }
+    #price h1 {
+        font: 600 2.5rem/1.2 var(--font-family);
+        margin-bottom: 3rem;
+    }
+    #price h1 + div .card,
+    #price h1 + div .card-popular {
+        width: 18rem;
+        height: 26rem;
+        padding: 2rem;
+    }
+    #price h1 + div .card .plan-name:nth-child(1),
+    #price h1 + div .card-popular .plan-name:nth-child(1) {
+        font-size: 1.2rem;
+    }
+    #price h1 + div .card h2,
+    #price h1 + div .card-popular h2 {
+        margin-block: 1.5rem 0.5rem;
+        font-size: 2.5rem;
+    }
+    #price h1 + div .card h2 small,
+    #price h1 + div .card-popular h2 small {
+        font-size: 1.2rem;
+    }
+    #price h1 + div .card h2 + span,
+    #price h1 + div .card-popular h2 + span {
+    font-size: 1rem;
+    line-height: 1.4;
+    }
+    #price h1 + div .card ul[role="list"] li,
+    #price h1 + div .card-popular ul[role="list"] li {
+        font-size: 0.75rem;
+        line-height: 1.2;
+        gap: 0.5rem;
+    }
+    #price h1 + div .card ul[role="list"] li img,
+    #price h1 + div .card-popular ul[role="list"] li img {
+    width: 0.75rem;
+    }
+    section#price h1 + div .card a,
+    section#price h1 + div .card-popular a {
+        max-width: 13rem; /* Define a largura máxima */
+        height: 2.5rem; /* Define uma altura consistente */
+        font-size: 0.875rem;
+    }
+    #price h1 + div .card-popular .semestral {
+        font-size: 1.2rem;
+    }
+    #price h1 + div .card-popular .label-popular {
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+    }
 }
