@@ -252,6 +252,10 @@ section#price h1 + div .card-popular a {
 }
 /* --------------------------- 1024px --------------------------------------- */
 @media (min-width: 64em) {
+    #price {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
     #price h1 + div {
         padding-block: 2rem 4rem;
         gap: 2rem; 
@@ -306,5 +310,66 @@ section#price h1 + div .card-popular a {
     #price h1 + div .card-popular .label-popular {
         padding: 0.5rem 1rem;
         font-size: 0.75rem;
+    }
+}
+/* --------------------------- 1280px --------------------------------------- */
+@media (min-width: 80em) {
+    #price h1 + div .s1, 
+    #price h1 + div .s2, 
+    #price h1 + div .s3,
+    #price h1 + div .s4,
+    #price h1 + div .rbbt {
+        display: none;
+    }
+    #price h1 + div {
+        padding-block: 2rem 6rem;
+        gap: 2rem; 
+    }
+    #price h1 + div .card,
+    #price h1 + div .card-popular {
+        width: 22rem;
+        height: 30rem;
+        padding: 3rem;
+    }
+    #price h1 + div .card .plan-name:nth-child(1),
+    #price h1 + div .card-popular .plan-name:nth-child(1) {
+        font-size: 1.5rem;
+    }
+    #price h1 + div .card h2,
+    #price h1 + div .card-popular h2 {
+        margin-block: 1.5rem 0.5rem;
+        font-size: 2.8rem;
+    }
+    #price h1 + div .card h2 small,
+    #price h1 + div .card-popular h2 small {
+        font-size: 1.5rem;
+    }
+    #price h1 + div .card h2 + span,
+    #price h1 + div .card-popular h2 + span {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    }
+    #price h1 + div .card ul[role="list"] li,
+    #price h1 + div .card-popular ul[role="list"] li {
+        font-size: 0.875rem;
+        line-height: 1.2;
+        gap: 0.5rem;
+    }
+    #price h1 + div .card ul[role="list"] li img,
+    #price h1 + div .card-popular ul[role="list"] li img {
+    width: 0.875rem;
+    }
+    section#price h1 + div .card a,
+    section#price h1 + div .card-popular a {
+        max-width: 15rem; /* Define a largura máxima */
+        height: 2.8rem; /* Define uma altura consistente */
+        font-size: 1rem;
+    }
+    #price h1 + div .card-popular .semestral {
+        font-size: 1.5rem;
+    }
+    #price h1 + div .card-popular .label-popular {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
     }
 }
