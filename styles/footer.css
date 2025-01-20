@@ -1,5 +1,5 @@
 footer {
-    margin-top: 6.5rem;
+    margin-top: 4.5rem;
     margin-inline: auto;
     background: url(../assets/img/book-trace-background-mobile.svg) center/cover;
     padding-block: 7.5rem 4rem;
@@ -89,3 +89,23 @@ footer .foot li:hover {
     color: var(--text-body);
 }
 
+@media (min-width: 48em) {
+    footer {
+        margin-top: 1rem;
+        background: url(../assets/img/book-trace-background.svg) center/cover;
+        padding-block: 8.5rem 4rem;
+    }
+
+    footer div:nth-child(1) img[src*="logo"] {
+        width: 16.5rem;
+    }
+}
+
+@media (min-width: 64em) {
+    footer {
+        padding-block: 11rem 7rem;
+        grid-auto-flow: column;
+    }
+
+    
+}

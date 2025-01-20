@@ -188,7 +188,7 @@ section#price h1 + div .card-popular a {
     #price h1 + div {
         flex-direction: row;
         max-width: var(--max-width);
-        padding-block: 2rem 4rem;
+        padding-block: 0.3rem 4rem;
         gap: 1rem;
     }
     #price h1 {
