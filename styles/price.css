@@ -314,16 +314,12 @@ section#price h1 + div .card-popular a {
 }
 /* --------------------------- 1280px --------------------------------------- */
 @media (min-width: 80em) {
-    #price h1 + div .s1, 
-    #price h1 + div .s2, 
-    #price h1 + div .s3,
-    #price h1 + div .s4 {
-        display: none;
-    }
+
     #price h1 + div {
         padding-block: 6rem 6rem;
         gap: 2rem; 
     }
+
     #price h1 + div .card,
     #price h1 + div .card-popular {
         width: 22rem;
@@ -331,11 +327,41 @@ section#price h1 + div .card-popular a {
         padding: 3rem;
         position: relative;
     }
+    #price h1 + div .s1 {
+        display: inline-block;
+        position: absolute;
+        top: 18rem !important;
+        left: 2rem !important;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    #price h1 + div .s2 {
+        display: inline-block;
+        position: absolute;
+        top: 21rem;
+        left: 1rem;
+        width: 1.5rem !important;
+        height: 1.5rem !important;
+    }
     #price h1 + div .rbbt {
         display: block;
         position: absolute;
         top: -3.2rem;
         left: 3rem;
+    }
+    #price h1 + div .s3 {
+        display: inline-block;
+        position: absolute;
+        bottom: 9rem;
+        right: 1rem;
+    }
+    #price h1 + div .s4 {
+        display: inline-block;
+        position: absolute;
+        bottom: 7rem;
+        right: 4rem;
+        width: 1.5rem !important;
+        height: 1.5rem !important;
     }
     #price h1 + div .card .plan-name:nth-child(1),
     #price h1 + div .card-popular .plan-name:nth-child(1) {
@@ -377,5 +403,30 @@ section#price h1 + div .card-popular a {
     #price h1 + div .card-popular .label-popular {
         padding: 0.5rem 1rem;
         font-size: 0.875rem;
+    }
+}
+/* --------------------------- 1440px --------------------------------------- */
+@media (min-width: 90em) {
+    #price h1 + div {
+        max-width: var(--max-width);
+    }
+
+    #price h1 + div .s1 {
+        top: 18rem !important;
+        left: 6rem !important;
+    }
+    #price h1 + div .s2 {
+        top: 21rem;
+        left: 5rem;
+    }
+    #price h1 + div .s3 {
+        bottom: 9rem;
+        right: 6rem;
+    }
+    #price h1 + div .s4 {
+        bottom: 7rem;
+        right: 9rem;
+        width: 1.5rem !important;
+        height: 1.5rem !important;
     }
 }
