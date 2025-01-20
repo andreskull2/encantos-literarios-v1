@@ -149,7 +149,8 @@ section#price h1 + div .card-popular:hover img[src*="star"] {
     align-items: center;
 }
 /* Label Semestral */
-#price h1 + div .card-popular .semestral { 
+#price h1 + div .card-popular .semestral {
+    font-weight: 600; 
     color: var(--pink-light);
 }
 /* Label Popular */
@@ -262,13 +263,52 @@ section#price h1 + div .card-popular a {
     }
     #price h1 {
         font: 600 2.5rem/1.2 var(--font-family);
-        margin-bottom: 3rem;
+        margin-bottom: 6rem;
     }
     #price h1 + div .card,
     #price h1 + div .card-popular {
         width: 18rem;
         height: 26rem;
         padding: 2rem;
+        position: relative;
+    }
+    #price h1 + div .s1 {
+        display: inline-block;
+        position: absolute;
+        top: 17.5rem !important;
+        left: 1rem !important;
+        width: 2rem;
+        height: 2rem;
+    }
+    #price h1 + div .s2 {
+        display: inline-block;
+        position: absolute;
+        top: 20rem;
+        left: 0.5rem;
+        width: 1rem !important;
+        height: 1rem !important;
+    }
+    #price h1 + div .rbbt {
+        display: block;
+        position: absolute;
+        top: -3.2rem;
+        left: 2rem;
+    }
+    #price h1 + div .s3 {
+        display: inline-block;
+        position: absolute;
+        bottom: 8.5rem;
+        right: 0.3rem;
+        width: 2rem;
+        height: 2rem;
+    }
+    #price h1 + div .s4 {
+        display: inline-block;
+        position: absolute;
+        bottom: 7rem;
+        right: 2rem;
+        width: 1rem;
+        height: 1rem;
     }
     #price h1 + div .card .plan-name:nth-child(1),
     #price h1 + div .card-popular .plan-name:nth-child(1) {
@@ -319,7 +359,9 @@ section#price h1 + div .card-popular a {
         padding-block: 6rem 6rem;
         gap: 2rem; 
     }
-
+    #price h1 {
+    margin-bottom: 4rem;
+    }
     #price h1 + div .card,
     #price h1 + div .card-popular {
         width: 22rem;
@@ -354,6 +396,8 @@ section#price h1 + div .card-popular a {
         position: absolute;
         bottom: 9rem;
         right: 1rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }
     #price h1 + div .s4 {
         display: inline-block;
