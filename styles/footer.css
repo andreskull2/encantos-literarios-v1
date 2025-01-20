@@ -1,8 +1,8 @@
 footer {
-    margin-top: 4.5rem;
+    margin-top: 7.5rem;
     margin-inline: auto;
     background: url(../assets/img/book-trace-background-mobile.svg) center/cover;
-    padding-block: 7.5rem 4rem;
+    padding-block: 9rem 4rem;
     gap: 2.5rem;
 }
 
