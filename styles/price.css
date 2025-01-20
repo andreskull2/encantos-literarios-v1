@@ -5,7 +5,7 @@
     position: relative;
     overflow-y: hidden;
     overflow-x: hidden;
-    padding-bottom: 4rem;
+    padding-bottom: -3rem;
 }
 /* Container - BG Blur */
 #price::before {
